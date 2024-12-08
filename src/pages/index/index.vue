@@ -4,10 +4,12 @@
 		<view>
 			<text class="title">{{title}}</text>
 		</view>
+		<view><button @click="test">test</button></view>
 	</view>
 </template>
 
 <script>
+import { init } from '../../tools.js';
 	export default {
 		data() {
 			return {
@@ -18,7 +20,9 @@
 
 		},
 		methods: {
-
+			test(){
+				init()
+			}
 		}
 	}
 </script>
